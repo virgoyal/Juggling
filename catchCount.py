@@ -4,7 +4,7 @@ import numpy as np
 # Constants
 LINE1_Y = 200  # Y-coordinate for the first line
 LINE2_Y = 400  # Y-coordinate for the second line
-BALL_COLOR_LOWER = (18,105 ,146)  # Example HSV color range for the ball (adjust as needed)
+BALL_COLOR_LOWER = (18,105 ,146)  
 BALL_COLOR_UPPER = (25, 140, 232)
 THROW_COUNT = 0
 CATCH_COUNT = 0
@@ -26,7 +26,7 @@ while True:
         print("Error: Could not read the frame.")
         break
 
-    # Flip frame (optional, depending on camera orientation)
+   
     frame = cv2.flip(frame, 1)
 
     # Convert to HSV for color detection
